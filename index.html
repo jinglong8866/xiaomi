@@ -5,6 +5,7 @@
 	<title>小米商城</title>
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="shortcut icon" href="img/xiaomi.png">
+	
 </head>
 <body>
 <div class="header">
@@ -59,7 +60,7 @@
 <!-- 首页轮播开始 -->
 <div class="lunbodahezi">
     <ul class="lunbokais">
-    	<li>
+    	<li class="atcive">
     		<a href="" class="">
     			<img src="img/lunbo.jpg" alt="" class="lunbotupian">
     		</a>
@@ -127,7 +128,7 @@
     	</li>
     </ul>
     <ul class="xiaodian">
-    	<li></li>
+    	<li class="atcive"></li>
     	<li></li>
     	<li></li>
     	<li></li>
@@ -191,7 +192,7 @@
 		<div class="danping">小米明星单品</div>
 		<div class="youmian">
 			<div class="zuomkuohao"><</div>
-			<div class="youkuohao">></div>
+			<div class="youkuohao active">></div>
 		</div>
 	</div>
 	<div class="xiamian">
@@ -229,6 +230,7 @@
 			<div class="jiage">149元</div>
 		</div>
 		<div class="xiaokuai xiaokuai1">
+
 			<a href="" class="zuixiaokuai">
 				<img src="img/xiaomishangc_14.png" alt="">
 			</a>
@@ -236,6 +238,50 @@
 			<div class="ziti">智能规划路径，扫的干净扫的快</div>
 			<div class="jiage">1699元</div>
 		</div>
+	    <div class="xiaokuai">
+			<a href="" class="zuixiaokuai">
+				<img src="img/xiaomishangc_06.png" alt="">
+			</a>
+			<a href="" class="wenzi">小米笔记本</a>
+			<div class="ziti">更轻更薄，像杂志一样随声携带</div>
+			<div class="jiage">3499元起</div>
+
+		</div>
+		<div class="xiaokuai">
+			<a href="" class="zuixiaokuai">
+				<img src="img/xiaomishangc_08.png" alt="">
+			</a>
+			<a href="" class="wenzi">小米电视3S 48英寸</a>
+			<div class="ziti">原装液晶屏，金属机身</div>
+			<div class="jiage">2599元</div>
+		</div>
+		<div class="xiaokuai">
+			<a href="" class="zuixiaokuai">
+				<img src="img/xiaomishangc_10.png" alt="">
+			</a>
+			<a href="" class="wenzi">小米移动电源2</a>
+			<div class="ziti">双向快充，高密度锂聚合物电芯</div>
+			<div class="jiage">79元</div>
+		</div>
+		<div class="xiaokuai">
+			<a href="" class="zuixiaokuai">
+				<img src="img/xiaomishangc_12.png" alt="">
+			</a>
+			<a href="" class="wenzi">小米手环2</a>
+			<div class="ziti">OLED显示屏幕，升级记步算法</div>
+			<div class="jiage">149元</div>
+		</div>
+		<div class="xiaokuai xiaokuai1">
+
+			<a href="" class="zuixiaokuai">
+				<img src="img/xiaomishangc_14.png" alt="">
+			</a>
+			<a href="" class="wenzi">米家扫地机器人</a>
+			<div class="ziti">智能规划路径，扫的干净扫的快</div>
+			<div class="jiage">1699元</div>
+		</div>
+
+	
 	</div>
 </div>
 <!-- 小米明星单品结束 -->
@@ -884,4 +930,48 @@
 </div>
 
 </body>
+<script src="js/index.js"></script>
+<script>
+//	{
+//	var imgs=document.querySelectorAll(".lunbokais li");
+//	var pagers=document.querySelectorAll(".xiaodian li");
+//	var lbhz=document.querySelector(".lunbodahezi");
+//	pagers.forEach(function(ele,index){
+//		ele.onclick=function(){
+//			for(var i=0;i<pagers.length;i++){
+//				pagers[i].classList.remove("atcive");
+//				imgs[i].classList.remove("atcive");
+//			}
+//			ele.classList.add("atcive");
+//			imgs[index].classList.add("atcive")
+//		}	
+//	})
+//	var n=0;
+//	function dt(){
+//  	n++;
+//  	if(n===pagers.length){
+//  		n=0
+//  	}
+//  	for(var i=0;i<pagers.length;i++){
+//			pagers[i].classList.remove("atcive");
+//			imgs[i].classList.remove("atcive");
+//		}
+//  	pagers[n].classList.add("atcive");
+//		imgs[n].classList.add("atcive");
+//  }
+//  var sp=setInterval(dt,1000)
+//  
+//  lbhz.onmouseover=function(){
+//  	clearInterval(sp)
+//  }
+//  
+//  lbhz.onmouseout=function(){
+//  	sp=setInterval(dt,1000);
+//  }
+//  
+//	}
+
+    
+	
+</script>
 </html>
