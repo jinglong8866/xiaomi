@@ -55,6 +55,7 @@
 	width: 1226px;
 	background:black;
 	margin:0 auto;
+	overflow: hidden;
 }
 .shangmian{
 	height: 59px;
@@ -63,8 +64,10 @@
 }
 .xiamian{
 	height: 340px;
-	width: 100%;
+	width: 3000px;
 	background: #ffffff;
+	transition: 1s;
+	
 }
 .xiaokuai{
 	height: 339px;
@@ -97,6 +100,22 @@
 .xiamian .xiaokuai:nth-child(4){
 	border-top:1px solid #f5bbba;
 }
+.xiamian .xiaokuai:nth-child(5){
+	border-top:1px solid #d4eac2;
+}
+.xiamian .xiaokuai:nth-child(6){
+	border-top:1px solid #b3daf9;
+}
+.xiamian .xiaokuai:nth-child(7){
+	border-top:1px solid #f5bbba;
+}
+.xiamian .xiaokuai:nth-child(8){
+	border-top:1px solid #d4eac2;
+}
+.xiamian .xiaokuai:nth-child(9){
+	border-top:1px solid #b3daf9;
+}
+
 .zuixiaokuai{
 	display:block;
 	height: 160px;
@@ -152,7 +171,7 @@
 	line-height: 22px;
 	color: #e3e4e4;
 	float: left;
-
+	
 }
 .youkuohao{
 	width: 34px;
@@ -165,9 +184,18 @@
 	float: right;
 	margin-left:0px;
 	border-left: none;
-
-
+	
 }
+
+.active{
+	cursor: pointer;
+}
+
+
+.active:hover{
+	color:#ff6700;
+}
+
 .changtiao{
 	width: 1226px;
 	height: 58px;
@@ -261,7 +289,6 @@
 	display: block;
 	height: 154px;
 	width: 176px;
-	background: red;
 	margin:0 auto;
 	margin-top: 31px;
 
@@ -907,6 +934,8 @@
 .lunbokais li{
 	width: 100%;
 	height: 100%;
+	opacity: 0;
+	transition: 1s;
 
 }
 
@@ -914,7 +943,18 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	
 }
+
+.lunbokais .atcive{
+	z-index: 10;
+	opacity: 1;
+	
+	
+}
+
+
+
 
 .lunbokais li a{
 	display: block;
@@ -929,6 +969,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 999;
+	opacity: 0.5;
 
 }
 .lunbocemian li{
@@ -965,27 +1007,34 @@
 }
 
 .xiaodian{
-	width: 90px;
+	width: 100px;
 	height: 10px;
 	/* background: red; */
 	position: absolute;
 	bottom: 25px;
 	right: 35px;
+	z-index: 999;
 
 }
 .xiaodian li{
-	width: 6px;
-	height: 6px;
-	background: black;
-	float: left;
-	margin-right: 10px;
-	border:2px solid #48484d;
-	border-radius: 50%;
+    float: left;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    border-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    
 }
 
 .xiaodian li:hover{
 	background: #7c7c81;
 }
+
+.xiaodian .atcive{
+	background: #7c7c81;
+}
+
 .xiaodian li:last-child{
 	margin-right: 0;
 }
@@ -999,6 +1048,7 @@
 	left: 234px;
 	top: 0;
 	bottom: 0;
+	z-index: 999;
 	margin-top: auto;
 	margin-bottom:  auto;
 }
@@ -1018,8 +1068,10 @@
 	right: 0;
 	top: 0;
 	bottom: 0;
+	z-index: 999;
 	margin-top: auto;
 	margin-bottom:  auto;
+	cursor:pointer;
 
 }
 
@@ -1028,6 +1080,7 @@
 	color: #aaaaac;
 	line-height: 69px;
 	margin-left: 10px;
+	cursor: pointer;
 
 }
 .lunbo146{
@@ -1198,11 +1251,11 @@
 
 @font-face {
   font-family: 'iconfont';  /* project id 492875 */
-  src: url('https://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.eot');
-  src: url('https://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.eot?#iefix') format('embedded-opentype'),
-  url('https://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.woff') format('woff'),
-  url('https://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.ttf') format('truetype'),
-  url('https://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.svg#iconfont') format('svg');
+  src: url('http://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.eot');
+  src: url('http://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_492875_zuorfrdt9e265hfr.svg#iconfont') format('svg');
 }
 
 .iconfont{
