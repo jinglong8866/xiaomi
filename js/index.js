@@ -1,7 +1,6 @@
 
 {
 	let imgs=document.querySelectorAll(".lunbokais li");
-	console.log(imgs);
 	let pagers=document.querySelectorAll(".xiaodian li");
 	let lbhz=document.querySelector(".lunbodahezi");
 	let left=document.querySelector(".lunbo145");
@@ -55,8 +54,7 @@
 }
 
 
-{
-	
+{	
 	let jtz=document.querySelector(".zuomkuohao");
 	let jty=document.querySelector(".youkuohao");
 	let dkh=document.querySelector(".xiamian");
@@ -90,3 +88,10 @@
 	}
 	
 }
+
+
+
+
+
+
+
